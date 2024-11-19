@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.send('Server del mio blog!')
     });
     app.get('/bacheca',(req, res)=> {
-        const posts =[
+        const noticeBoard =[
             {   
                 titolo: "Ciambellone",
                 contenuto:"Un dolce soffice e genuino, perfetto per addolcire le tue giornate con un tocco di tradizione casalinga.",
@@ -40,11 +40,8 @@ app.get('/', (req, res) => {
                 tags : ["dolce", "torta", "paesana"]
             }]
 
-            res.json(posts);
+            res.json(noticeBoard);
             })
-
-
-
 
 
     app.listen(port, () => {
